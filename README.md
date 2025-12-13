@@ -1,4 +1,4 @@
-# WiDS2025 Predicting Stock Volatility Using Financial News Sentiment Analysis
+# Predicting Stock Volatility Using Financial News Sentiment Analysis
 
 ## Description
 This project explores how financial news sentiment influences stock market volatility, combining fundamental concepts from Natural Language Processing (NLP) and Quantitative Financial Analytics.
