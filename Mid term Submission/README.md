@@ -89,17 +89,6 @@ Include a **Markdown section** answering:
 merged_midterm_data.csv
 ```
 
----
-
-### Task 7: Exploratory Analysis
-- Provide **at least two insights**, such as:
-  - News volume per day
-  - News distribution across sources
-  - Trading vs non-trading day news frequency
-- Include **at least one simple plot**
-
----
-
 ## Submission Requirements
 Submit a link to github repo with the following:
 - Jupyter Notebook:
