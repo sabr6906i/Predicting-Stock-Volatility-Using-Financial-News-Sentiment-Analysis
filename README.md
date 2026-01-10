@@ -1,8 +1,3 @@
-# Predicting Stock Volatility Using Financial News Sentiment Analysis
-
-Understood. Below is the **clean, properly formatted `README.md` content** in **Markdown (.md) format**. You can copy–paste this directly into your `README.md` file.
-
----
 
 # Project Repository Overview
 
