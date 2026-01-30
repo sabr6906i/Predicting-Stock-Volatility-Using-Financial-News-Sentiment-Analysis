@@ -1,0 +1,35 @@
+name: Generate README PDF
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  generate_pdf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pandoc and TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra
+
+      - name: Convert README to PDF
+        run: |
+          pandoc "Final Submission/Readme.md" -o "Final Submission/Readme.pdf" \
+            --pdf-engine=xelatex -V geometry:margin=1in -V fontsize=12pt
+
+      - name: Commit PDF to branch
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "github-actions[bot]"
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
+          message: "Add README as PDF"
+          add: "Final Submission/Readme.pdf"
+          branch: "add/readme-pdf"
