@@ -787,4 +787,4 @@ This project demonstrates the intersection of Natural Language Processing and Fi
 
 ---
 
-*Made with ❤️ for the Women in Data Science (WiDS) 2025 Project*
+*Made with ❤️ for the Winter in Data Science (WiDS) 2025 Project*
